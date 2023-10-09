@@ -40,15 +40,33 @@ header ul {
   flex-direction: row;
   justify-content: center;
   gap: 50px;
+  margin: 24px 0 24px 0;
 }
 
 .address-container {
   display: flex;
-  width: 50%;
-  flex-direction: row;
-  align-items: center;
+  justify-content: flex-end;
+}
+
+.svg-icon:hover,
+.svg-icon:focus {
+  fill: var(--standard-highlight-color);
+}
+
+.icon-and-address {
+  display: flex;
   justify-content: center;
-  gap: 40px;
+}
+
+.icon-and-address svg {
+  width: 10%;
+  height: 16px;
+  fill: #757575;
+}
+
+.icon-and-address:hover,
+.icon-and-address:focus {
+  fill: var(--standard-highlight-color);
 }
 
 .main-link {
@@ -108,6 +126,7 @@ header ul {
 
 .footer-address-container {
   list-style-type: none;
+  width: 231px;
   display: flex;
   flex-direction: column;
   padding-top: 28px;
@@ -118,6 +137,7 @@ header ul {
 
 .footer-style {
   /* height: 251px; */
+  display: flex;
   background-color: var(--standard-bg-color);
   color: #fff;
 }
@@ -128,10 +148,53 @@ header ul {
   font-style: normal;
 }
 
+.find-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 70px;
+}
+
+.find-us-title {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.find-us-list {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+.find-us-list li {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  fill: #fff;
+}
+
+.find-us-list li:hover,
+.find-us-list li:focus {
+  background-color: var(--standard-highlight-color);
+  fill: #fff;
+}
+
+.find-us-list svg {
+  width: 20px;
+}
+
 /* Styles for index.html */
 
 .first-section {
   background-color: var(--standard-bg-color);
+  background-image: url(/images/background-image.jpg);
   display: flex;
   justify-content: center;
   color: #fff;
@@ -192,6 +255,24 @@ header ul {
   margin: 0;
 }
 
+.what-we-do-icons-container {
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 100px;
+}
+
+.what-we-do-icons {
+  width: 70px;
+  height: 70px;
+}
+
+.what-we-do-icons svg {
+  width: 70px;
+  height: 70px;
+}
+
 .what-we-do-container {
   display: flex;
   flex-direction: column;
@@ -242,6 +323,10 @@ header ul {
   border-bottom-right-radius: 4px;
 }
 
+.team-cards-container > li {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 .our-team-section {
   display: flex;
   justify-content: center;
@@ -282,6 +367,71 @@ header ul {
   padding: 10px auto 30px auto;
 }
 
+.team-social-media {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 30px 0;
+}
+
+.team-social-media li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  list-style-type: none;
+  fill: #afb1b8;
+}
+
+.team-social-media li:hover,
+.team-social-media li:focus {
+  background-color: var(--standard-highlight-color);
+  border-radius: 50%;
+  fill: #fff;
+}
+
+.team-social-media li svg {
+  width: 20px;
+  height: 20px;
+}
+
+.regular-customers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.regular-customers-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.regular-customers-list {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  padding: 50px 0 0 0;
+  margin: 0;
+}
+
+.regular-customers-list li {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.regular-customers-list li:hover,
+.regular-customers-list li:focus {
+  fill: var(--standard-highlight-color);
+  border-color: var(--standard-highlight-color);
+}
+
 /* Styles for portofolio.html */
 
 .portofolio-button {
@@ -300,6 +450,7 @@ header ul {
 .portofolio-button:focus {
   color: #fff;
   background-color: var(--standard-highlight-color);
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .project-name {
@@ -357,4 +508,8 @@ header ul {
 
 .cards-container li {
   border: 1px solid #eeeeee;
+}
+
+.cards-container > li:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
