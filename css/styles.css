@@ -194,7 +194,7 @@ header ul {
 
 .first-section {
   background-color: var(--standard-bg-color);
-  background-image: url(/images/background-image.jpg);
+  background-image: url(./images/background-image.jpg);
   display: flex;
   justify-content: center;
   color: #fff;
