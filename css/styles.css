@@ -1,7 +1,7 @@
 /* Styles for both index.html and portofolio.html */
 :root {
-  --standard-font: 'Roboto', sans-serif;
-  --standard-title-font: 'Raleway', sans-serif;
+  --standard-font: "Roboto", sans-serif;
+  --standard-title-font: "Raleway", sans-serif;
   --standard-bg-color: #2f303a;
   --standard-highlight-color: #2196f3;
   --standard-gray: #757575;
@@ -194,7 +194,7 @@ header ul {
 
 .first-section {
   background-color: var(--standard-bg-color);
-  background-image: url(/images/background-image.jpg);
+  background-image: url(../images/background-image.jpg);
   display: flex;
   justify-content: center;
   color: #fff;
