@@ -1,7 +1,7 @@
 /* Styles for both index.html and portofolio.html */
 :root {
-  --standard-font: "Roboto", sans-serif;
-  --standard-title-font: "Raleway", sans-serif;
+  --standard-font: 'Roboto', sans-serif;
+  --standard-title-font: 'Raleway', sans-serif;
   --standard-bg-color: #2f303a;
   --standard-highlight-color: #2196f3;
   --standard-gray: #757575;
@@ -43,25 +43,27 @@ header ul {
   margin: 24px 0 24px 0;
 }
 
-.address-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.svg-icon:hover,
-.svg-icon:focus {
-  fill: var(--standard-highlight-color);
-}
-
-.icon-and-address {
+.header-contact-container {
+  width: 50%;
   display: flex;
   justify-content: center;
 }
 
-.icon-and-address svg {
-  width: 10%;
+.address-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+}
+
+.address-container li:first-child svg {
+  width: 16px;
+  height: 12px;
+}
+
+.address-container li:last-child svg {
+  width: 10px;
   height: 16px;
-  fill: #757575;
 }
 
 .icon-and-address:hover,
@@ -97,18 +99,28 @@ header ul {
 }
 
 .contact-method {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
   font-weight: 500;
   color: var(--standard-gray);
+  margin-right: 40px;
+}
+
+.svg-icon {
+  fill: #afb1b8;
+  margin-right: 10px;
 }
 
 .navigation-link-address:hover,
 .navigation-link-address:focus,
 .contact-method:hover,
-.contact-method:focus {
+.contact-method:focus,
+.contact-method:hover span svg {
   color: var(--standard-highlight-color);
+  fill: var(--standard-highlight-color);
 }
 
 .actual {
